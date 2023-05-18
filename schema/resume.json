@@ -1,6 +1,6 @@
 {
   "header": {
-    "name": "Edwin Torres Sánchez",
+    "name": "Edwin Torres",
     "location": "Toronto, Canada",
     "role": "Senior, Software Engineer",
     "contact": {
@@ -48,15 +48,15 @@
   ],
   "education": [
     {
-      "dates": "2023-present",
+      "dates": "2023 - Present",
       "institution": "ZTM Academy",
-      "certificate": "Machine Learning and Data Science",
+      "certificate": "Machine Learning and Data Science, Online",
       "accomplishments": []
     },
     {
-      "dates": "2008-2014",
+      "dates": "2008 - 2014",
       "institution": "ECCI University",
-      "certificate": "Bachelor of Science in Computer Science",
+      "certificate": "Bachelor of Science in Computer Science, Colombia",
       "accomplishments": ["Winner Programming Contests 2011, 2010, 2009"]
     }
   ],
