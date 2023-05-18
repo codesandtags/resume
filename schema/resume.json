@@ -1,54 +1,63 @@
 {
   "header": {
-    "name": "John Doe",
+    "name": "Edwin Torres Sánchez",
+    "location": "Toronto, Canada",
+    "role": "Senior, Software Engineer",
     "contact": {
-      "phone": "(123) 456-7890",
-      "email": "john.doe@example.com"
+      "phone": "(+1) 123-456789",
+      "email": "codesandtags@gmail.com"
     },
     "socialMedia": {
-      "linkedin": "https://linkedin.com/in/johndoe",
-      "github": "https://github.com/johndoe"
+      "linkedin": "https://ca.linkedin.com/in/edwintorresdeveloper/en",
+      "github": "https://github.com/codesandtags",
+      "website": "https://www.codesandtags.io/"
     }
   },
-  "summary": "A highly motivated software developer with over 5 years of experience in web development. Proficient in modern technologies and frameworks, with a focus on creating efficient and high-performing applications.",
+  "summary": "Highly driven software developer with a decade of experience across diverse industries including Real Estate, Payments, Health, and Finance. Specialized in Web Development, Micro Frontends, InnerSource, and Architecture Design. Passionate about enhancing developer experience through improved documentation and task automation.",
   "workExperience": [
     {
-      "jobTitle": "Senior Software Developer",
-      "company": "Tech Corp",
-      "dates": "2021-Present",
+      "jobTitle": "Senior Software Engineer",
+      "company": "Scotiabank, Canada",
+      "dates": "Feb 2021 - Present",
       "accomplishments": [
-        "Led a team of developers to build a high-performing, scalable web application.",
-        "Implemented automated testing framework which reduced bugs by 25%.",
-        "Presented at 2022 Tech Conference about our team's approach to agile methodology."
+        "Implemented Backstage to increased the <strong>Developer Experience (DX)</strong> for more than <strong>200 developers</strong> in different regions.",
+        "Worked with teams in different regions across America, to promote the software reuse.",
+        "Advocated the InnerSource adoption at Scotiabank, and, created documentation, provided talks and guidance."
       ]
     },
     {
-      "jobTitle": "Software Developer",
-      "company": "Web Solutions",
-      "dates": "2018-2021",
+      "jobTitle": "Software Architect",
+      "company": "Scotiabank, Colombia",
+      "dates": "Nov 2019 - Feb 2021",
       "accomplishments": [
-        "Developed several high-impact features for the company's main product, leading to a 15% increase in user engagement.",
-        "Improved application's performance by optimizing the front-end code.",
-        "Worked closely with the design team to implement a new responsive design for the product."
+        "Architect and write front end code for the foundation and complex features of each project.",
+        "Work closely with our design and UX teams to deliver next generation experiences across our applications.",
+        "Created technical documentation for front end aspects of the project."
       ]
     },
     {
-      "jobTitle": "Junior Software Developer",
-      "company": "Start-Up",
-      "dates": "2016-2018",
+      "jobTitle": "Full Stack Developer",
+      "company": "Scotiabank, Colombia",
+      "dates": "Jun 2017 - Nov 2019",
       "accomplishments": [
-        "Contributed to the development of the company's product from the ground up.",
-        "Proposed and implemented a solution for improving API response time.",
-        "Collaborated with a cross-functional team to launch the product on time."
+        "Implemented successfully the Microfrontend architecture for 7 application in one of the most important customer flows.",
+        "Created and maintained group of reusable libraries for Frontend projects.",
+        "Lead a frontend community made of ~20 people."
       ]
     }
   ],
   "education": [
     {
-      "dates": "2012-2016",
-      "institution": "Some University",
+      "dates": "2023-present",
+      "institution": "ZTM Academy",
+      "certificate": "Machine Learning and Data Science",
+      "accomplishments": []
+    },
+    {
+      "dates": "2008-2014",
+      "institution": "ECCI University",
       "certificate": "Bachelor of Science in Computer Science",
-      "accomplishments": "Graduated with Honors"
+      "accomplishments": ["Winner Programming Contest 2015"]
     }
   ],
   "skills": [
