@@ -2,8 +2,13 @@ function populateHeader(header) {
   const headerElement = document.querySelector("header");
   headerElement.innerHTML = `
     <h1>${header.name}</h1>
-    <p>${header.contact.phone}, ${header.contact.email}</p>
-    <p><a href="${header.socialMedia.linkedin}">LinkedIn</a>, <a href="${header.socialMedia.github}">GitHub</a></p>
+    <h3>${header.role}</h3>
+    <p>📍 ${header.location}, ${header.contact.email}</p>
+    <p>
+      <a href="${header.socialMedia.linkedin}">LinkedIn</a> 
+      | <a href="${header.socialMedia.github}">GitHub</a>
+      | <a href="${header.socialMedia.website}">Website</a>
+      </p>
   `;
 }
 
@@ -25,9 +30,15 @@ function populateWorkExperience(workExperience) {
 
   workExperience.forEach(job => {
     const jobElement = document.createElement('div');
+    jobElement.classList.add('experience');
     jobElement.innerHTML = `
-      <h3>${job.jobTitle} at ${job.company}</h3>
-      <h4>${job.dates}</h4>
+      <div class="experience__header">
+        <h3>${job.jobTitle}</h3>
+        <div>
+          <h4>${job.company}</h4>
+          <h4>${job.dates}</h4>
+        </div>
+      </div>
       <ul>
         ${job.accomplishments.map(acc => `<li>${acc}</li>`).join('')}
       </ul>
@@ -35,7 +46,6 @@ function populateWorkExperience(workExperience) {
     workExperienceElement.appendChild(jobElement);
   });
 }
-
 
 function populateEducation(education) {
   const educationElement = document.querySelector('#education');
@@ -54,30 +64,56 @@ function populateEducation(education) {
 }
 
 
+// Get skill strength with squares given a skill level
+function getSkillStrength(level) {
+  const skillStrength = [];
+  for (let i = 0; i < 5; i++) {
+    if (i < level) {
+      skillStrength.push('■');
+    } else {
+      skillStrength.push('□');
+    }
+  }
+  return skillStrength.join('');
+}
+
 function populateSkills(skills) {
   const skillsElement = document.querySelector('#skills');
   skillsElement.innerHTML = '<h2>Skills</h2>';
 
+  const skillGroup = document.createElement('div');
+  skillGroup.classList.add('skill-group');
   const hardSkills = skills.filter(skill => skill.type === 'hard');
   const softSkills = skills.filter(skill => skill.type === 'soft');
 
   const hardSkillsList = document.createElement('div');
   hardSkillsList.innerHTML = `
-    <h3>Hard Skills</h3>
-    <ul>
-      ${hardSkills.map(skill => `<li>${skill.name} (${skill.level}/5)</li>`).join('')}
-    </ul>
+    <div clas="hard-skills">
+      <h3>Hard Skills</h3>
+      <ul>
+        ${hardSkills.map(skill => `<li>
+          <span>${skill.name}</span>
+          <span>${getSkillStrength(skill.level)}</span>
+        </li>`).join('')}
+      </ul>
+    </div>
   `;
-  skillsElement.appendChild(hardSkillsList);
+  skillGroup.appendChild(hardSkillsList);
 
   const softSkillsList = document.createElement('div');
   softSkillsList.innerHTML = `
-    <h3>Soft Skills</h3>
-    <ul>
-      ${softSkills.map(skill => `<li>${skill.name} (${skill.level}/5)</li>`).join('')}
-    </ul>
+    <div clas="soft-skills">
+      <h3>Soft Skills</h3>
+      <ul>
+        ${softSkills.map(skill => `<li>
+          <span>${skill.name}</span>
+          <span>${getSkillStrength(skill.level)}</span>
+        </li>`).join('')}
+      </ul>
+    </div>
   `;
-  skillsElement.appendChild(softSkillsList);
+  skillGroup.appendChild(softSkillsList);
+  skillsElement.appendChild(skillGroup);
 }
 
 

@@ -1,25 +1,28 @@
 {
   "header": {
-    "name": "John Doe",
+    "name": "Edwin Torres Sánchez",
+    "location": "Toronto, Canada",
+    "role": "Senior, Software Engineer",
     "contact": {
-      "phone": "(123) 456-7890",
-      "email": "john.doe@example.com"
+      "phone": "(+1) 123-456789",
+      "email": "codesandtags@gmail.com"
     },
     "socialMedia": {
-      "linkedin": "https://linkedin.com/in/johndoe",
-      "github": "https://github.com/johndoe"
+      "linkedin": "https://ca.linkedin.com/in/edwintorresdeveloper/en",
+      "github": "https://github.com/codesandtags",
+      "website": "https://www.codesandtags.io/"
     }
   },
-  "summary": "A highly motivated software developer with over 5 years of experience in web development. Proficient in modern technologies and frameworks, with a focus on creating efficient and high-performing applications.",
+  "summary": "Highly driven software developer with a decade of experience across diverse industries including Real Estate, Payments, Health, and Finance. Specialized in Web Development, Micro Frontends, InnerSource, and Architecture Design. Passionate about enhancing developer experience through improved documentation and task automation.",
   "workExperience": [
     {
-      "jobTitle": "Senior Software Developer",
-      "company": "Tech Corp",
+      "jobTitle": "Senior Software Engineer",
+      "company": "Scotiabank",
       "dates": "2021-Present",
       "accomplishments": [
-        "Led a team of developers to build a high-performing, scalable web application.",
-        "Implemented automated testing framework which reduced bugs by 25%.",
-        "Presented at 2022 Tech Conference about our team's approach to agile methodology."
+        "Worked with teams in different regions across America,  to promote the reuse mindset and culture.",
+        "Advocated the InnerSource culture, creating documentation, maintaining repositories, and helping people to understand more about this mindset.",
+        "Implemented Backstage to increased the Developer Experience for more than 200 developers in different regions."
       ]
     },
     {
