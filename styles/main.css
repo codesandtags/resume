@@ -88,6 +88,7 @@ ul {
  Job Experience
  **/
 .experience__header {
+  margin-top: 1rem;
   padding: 1rem 0;
 }
 
@@ -98,6 +99,25 @@ ul {
 }
 
 .experience__header h4 {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+/**
+ Education
+ **/
+.education__header {
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.education__header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education__header h4 {
   font-size: 1.2rem;
   color: var(--secondary-color);
 }
@@ -114,6 +134,12 @@ ul {
 .skill-group > div {
   width: 100%;
   margin: 1rem 0;
+}
+
+.skill-group > div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .skill-group > div ul li {
@@ -133,6 +159,10 @@ ul {
 
   .skill-group {
     flex-direction: row;
+  }
+
+  .skill-group > div:nth-child(2) {
+    margin-left: 2rem;
   }
 
   .skill-group > div {

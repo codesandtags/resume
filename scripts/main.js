@@ -53,11 +53,18 @@ function populateEducation(education) {
 
   education.forEach(edu => {
     const eduElement = document.createElement('div');
+    eduElement.classList.add('education');
     eduElement.innerHTML = `
-      <h3>${edu.institution}</h3>
-      <p>${edu.certificate}</p>
-      <p>${edu.dates}</p>
-      <p>Accomplishments: ${edu.accomplishments}</p>
+      <div class="education__header">
+        <h3>${edu.institution}</h3>
+        <div>
+          <h4>${edu.certificate}</h4>
+          <h4>${edu.dates}</h4>
+        </div>
+      </div>
+      <ul>
+        ${edu.accomplishments.map(acc => `<li>${acc}</li>`).join('')}
+      </ul>
     `;
     educationElement.appendChild(eduElement);
   });
@@ -141,6 +148,5 @@ fetch("schema/resume.json")
     populateWorkExperience(data.workExperience);
     populateEducation(data.education);
     populateSkills(data.skills);
-    populatePortfolio(data.portfolio);
   })
   .catch((error) => console.error("Error:", error));
