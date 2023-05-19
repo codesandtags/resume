@@ -27,7 +27,7 @@ html {
 
 body {
   color: var(--dark-color);
-  font-family: Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 10px;
   line-height: 1.6;
   margin: 0;
@@ -64,9 +64,19 @@ section h2 {
   margin-top: 2rem;
 }
 
+h1,
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h1,
 h2,
 h3 {
   color: var(--dark-color);
+}
+
+h2 {
+  letter-spacing: 0.2rem;
 }
 
 h2 {
