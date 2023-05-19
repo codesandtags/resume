@@ -13,11 +13,11 @@ function populateHeader(header) {
 }
 
 /**
- * 
- * @param {*} summary 
+ *
+ * @param {*} summary
  */
 function populateSummary(summary) {
-  const summaryElement = document.querySelector('#summary');
+  const summaryElement = document.querySelector("#summary");
   summaryElement.innerHTML = `
     <h2>Summary</h2>
     <p>${summary}</p>
@@ -25,12 +25,12 @@ function populateSummary(summary) {
 }
 
 function populateWorkExperience(workExperience) {
-  const workExperienceElement = document.querySelector('#workExperience');
-  workExperienceElement.innerHTML = '<h2>Work Experience</h2>';
+  const workExperienceElement = document.querySelector("#workExperience");
+  workExperienceElement.innerHTML = "<h2>Work Experience</h2>";
 
-  workExperience.forEach(job => {
-    const jobElement = document.createElement('div');
-    jobElement.classList.add('experience');
+  workExperience.forEach((job) => {
+    const jobElement = document.createElement("div");
+    jobElement.classList.add("experience");
     jobElement.innerHTML = `
       <div class="experience__header">
         <h3>${job.jobTitle}</h3>
@@ -40,7 +40,7 @@ function populateWorkExperience(workExperience) {
         </div>
       </div>
       <ul>
-        ${job.accomplishments.map(acc => `<li>${acc}</li>`).join('')}
+        ${job.accomplishments.map((acc) => `<li>${acc}</li>`).join("")}
       </ul>
     `;
     workExperienceElement.appendChild(jobElement);
@@ -48,12 +48,12 @@ function populateWorkExperience(workExperience) {
 }
 
 function populateEducation(education) {
-  const educationElement = document.querySelector('#education');
-  educationElement.innerHTML = '<h2>Education</h2>';
+  const educationElement = document.querySelector("#education");
+  educationElement.innerHTML = "<h2>Education</h2>";
 
-  education.forEach(edu => {
-    const eduElement = document.createElement('div');
-    eduElement.classList.add('education');
+  education.forEach((edu) => {
+    const eduElement = document.createElement("div");
+    eduElement.classList.add("education");
     eduElement.innerHTML = `
       <div class="education__header">
         <h3>${edu.institution}</h3>
@@ -63,73 +63,100 @@ function populateEducation(education) {
         </div>
       </div>
       <ul>
-        ${edu.accomplishments.map(acc => `<li>${acc}</li>`).join('')}
+        ${edu.accomplishments.map((acc) => `<li>${acc}</li>`).join("")}
       </ul>
     `;
     educationElement.appendChild(eduElement);
   });
 }
 
-
 // Get skill strength with squares given a skill level
 function getSkillStrength(level) {
   const skillStrength = [];
   for (let i = 0; i < 5; i++) {
     if (i < level) {
-      skillStrength.push('■');
+      skillStrength.push("<span>■</span>");
     } else {
-      skillStrength.push('□');
+      skillStrength.push("<span>□</span>");
     }
   }
-  return skillStrength.join('');
+  return skillStrength.join("");
+}
+
+function renderSkills(skills) {
+  return `
+  <ul>
+  ${skills
+    .map(
+      (skill) => `<li>
+    <span>${skill.name}</span>
+    <div class="skill-level">${getSkillStrength(skill.level)}</div>
+  </li>`
+    )
+    .join("")}
+</ul>`;
+}
+
+function addIntersectionToAnimateSkills(skillsSection) {
+  // Create an Intersection Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      // If the entry is intersecting
+      if (entry.isIntersecting) {
+        const skillSpans = entry.target.querySelectorAll(".skill-level span");
+        skillSpans.forEach((span, index) => {
+          // Add a delay based on the index and add the animate class
+          setTimeout(() => {
+            span.classList.add("animate");
+          }, index * 20);
+        });
+
+        // Disconnect the observer once the animation has been triggered
+        observer.disconnect();
+      }
+    });
+  });
+
+  // Start observing the skills section
+  observer.observe(skillsSection);
 }
 
 function populateSkills(skills) {
-  const skillsElement = document.querySelector('#skills');
-  skillsElement.innerHTML = '<h2>Skills</h2>';
+  const skillsElement = document.querySelector("#skills");
+  skillsElement.innerHTML = "<h2>Skills</h2>";
 
-  const skillGroup = document.createElement('div');
-  skillGroup.classList.add('skill-group');
-  const hardSkills = skills.filter(skill => skill.type === 'hard');
-  const softSkills = skills.filter(skill => skill.type === 'soft');
+  const skillGroup = document.createElement("div");
+  skillGroup.classList.add("skill-group");
+  const hardSkills = skills.filter((skill) => skill.type === "hard");
+  const softSkills = skills.filter((skill) => skill.type === "soft");
 
-  const hardSkillsList = document.createElement('div');
+  const hardSkillsList = document.createElement("div");
   hardSkillsList.innerHTML = `
     <div clas="hard-skills">
       <h3>Hard Skills</h3>
-      <ul>
-        ${hardSkills.map(skill => `<li>
-          <span>${skill.name}</span>
-          <span>${getSkillStrength(skill.level)}</span>
-        </li>`).join('')}
-      </ul>
+      ${renderSkills(hardSkills)}
     </div>
   `;
   skillGroup.appendChild(hardSkillsList);
 
-  const softSkillsList = document.createElement('div');
+  const softSkillsList = document.createElement("div");
   softSkillsList.innerHTML = `
     <div clas="soft-skills">
       <h3>Soft Skills</h3>
-      <ul>
-        ${softSkills.map(skill => `<li>
-          <span>${skill.name}</span>
-          <span>${getSkillStrength(skill.level)}</span>
-        </li>`).join('')}
-      </ul>
+      ${renderSkills(softSkills)}
     </div>
   `;
   skillGroup.appendChild(softSkillsList);
   skillsElement.appendChild(skillGroup);
+  addIntersectionToAnimateSkills(skillsElement);
 }
 
-
 function populatePortfolio(portfolio) {
-  const portfolioElement = document.querySelector('#portfolio');
-  portfolioElement.innerHTML = '<h2>Portfolio</h2>';
+  const portfolioElement = document.querySelector("#portfolio");
+  portfolioElement.innerHTML = "<h2>Portfolio</h2>";
 
-  portfolio.forEach(item => {
-    const itemElement = document.createElement('div');
+  portfolio.forEach((item) => {
+    const itemElement = document.createElement("div");
     itemElement.innerHTML = `
       <h3>${item.title}</h3>
       <a href="${item.link}">${item.link}</a>
@@ -138,7 +165,6 @@ function populatePortfolio(portfolio) {
   });
 }
 
-
 // Fetch the resume data from the JSON file
 fetch("schema/resume.json")
   .then((response) => response.json())
@@ -146,7 +172,7 @@ fetch("schema/resume.json")
     populateHeader(data.header);
     populateSummary(data.summary);
     populateWorkExperience(data.workExperience);
-    populateEducation(data.education);
     populateSkills(data.skills);
+    populateEducation(data.education);
   })
   .catch((error) => console.error("Error:", error));
