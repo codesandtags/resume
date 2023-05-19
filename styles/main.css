@@ -206,7 +206,7 @@ ul {
     border-radius: var(--border-radius);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
-    padding: 2rem;
+    padding: 2rem 3.5rem;
     background-color: var(--white-color);
   }
 
