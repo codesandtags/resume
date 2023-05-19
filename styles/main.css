@@ -162,6 +162,7 @@ ul {
 
 .skill-level span {
   opacity: 0;
+  color: var(--primary-color);
 }
 
 .skill-level span.animate {
