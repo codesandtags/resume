@@ -1,8 +1,8 @@
 {
   "header": {
-    "name": "Edwin Torres Sánchez",
+    "name": "Edwin Torres",
     "location": "Toronto, Canada",
-    "role": "Senior, Software Engineer",
+    "role": "Senior Software Engineer",
     "contact": {
       "phone": "(+1) 123-456789",
       "email": "codesandtags@gmail.com"
@@ -13,7 +13,7 @@
       "website": "https://www.codesandtags.io/"
     }
   },
-  "summary": "Highly driven software developer with a decade of experience across diverse industries including Real Estate, Payments, Health, and Finance. Specialized in Web Development, Micro Frontends, InnerSource, and Architecture Design. Passionate about enhancing developer experience through improved documentation and task automation.",
+  "summary": "Highly driven software developer with a decade of experience across diverse industries including Real Estate, Payments, Health, and Finance. Specialized in Web Development, Micro Frontends, InnerSource, and Architecture Design. <strong>Passionate about enhancing developer experience</strong> through improved documentation and task automation.",
   "workExperience": [
     {
       "jobTitle": "Senior Software Engineer",
@@ -48,16 +48,16 @@
   ],
   "education": [
     {
-      "dates": "2023-present",
+      "dates": "2023 - Present",
       "institution": "ZTM Academy",
-      "certificate": "Machine Learning and Data Science",
+      "certificate": "Machine Learning and Data Science, Online",
       "accomplishments": []
     },
     {
-      "dates": "2008-2014",
+      "dates": "2008 - 2014",
       "institution": "ECCI University",
-      "certificate": "Bachelor of Science in Computer Science",
-      "accomplishments": ["Winner Programming Contest 2015"]
+      "certificate": "Bachelor of Science in Computer Science, Colombia",
+      "accomplishments": ["Winner Programming Contests 2011, 2010, 2009"]
     }
   ],
   "skills": [
