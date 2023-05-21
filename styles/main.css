@@ -12,6 +12,7 @@
   --border-radius: 0.5rem;
   --border-color: #ccc;
   --transition: all 0.3s ease;
+  --hover-color: #dae8f5;
 }
 
 /* Reset CSS */
@@ -195,6 +196,38 @@ ul {
   animation-delay: 0.8s;
 }
 
+/**
+ Interests
+ **/
+
+#interests {
+  margin-top: 1rem;
+}
+
+#interests ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#interests ul li {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+#interests ul li:hover {
+  background-color: var(--hover-color);
+  border-color: var(--primary-color);
+}
+
+/**
+ Media Queries
+ **/
 @media (min-width: 600px) {
   body {
     background-color: var(--gray-color);

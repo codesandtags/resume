@@ -165,6 +165,21 @@ function populatePortfolio(portfolio) {
   });
 }
 
+// Populate interests section
+function populateInterests(interests) {
+  const interestsElement = document.querySelector("#interests");
+  interestsElement.innerHTML = "<h2>Interests</h2>";
+  const interestsList = document.createElement("ul");
+
+  interests.forEach((interest) => {
+    const interestElement = document.createElement("li");
+    interestElement.innerHTML = `<span>${interest}</span>`;
+    interestsList.appendChild(interestElement);
+  });
+
+  interestsElement.appendChild(interestsList);
+}
+
 // Fetch the resume data from the JSON file
 fetch("schema/resume.json")
   .then((response) => response.json())
@@ -174,5 +189,6 @@ fetch("schema/resume.json")
     populateWorkExperience(data.workExperience);
     populateSkills(data.skills);
     populateEducation(data.education);
+    populateInterests(data.interests);
   })
   .catch((error) => console.error("Error:", error));
