@@ -67,12 +67,17 @@
       "type": "hard"
     },
     {
+      "name": "TypeScript",
+      "level": 5,
+      "type": "hard"
+    },
+    {
       "name": "Python",
       "level": 4,
       "type": "hard"
     },
     {
-      "name": "HTML/CSS",
+      "name": "HTML/CSS/SASS",
       "level": 5,
       "type": "hard"
     },
@@ -83,6 +88,21 @@
     },
     {
       "name": "Node.js",
+      "level": 4,
+      "type": "hard"
+    },
+    {
+      "name": "NextJS",
+      "level": 4,
+      "type": "hard"
+    },
+    {
+      "name": "Docker",
+      "level": 4,
+      "type": "hard"
+    },
+    {
+      "name": "Kubernetes",
       "level": 4,
       "type": "hard"
     },
@@ -110,6 +130,11 @@
       "name": "Leadership",
       "level": 4,
       "type": "soft"
+    },
+    {
+      "name": "Community Driven",
+      "level": 4,
+      "type": "soft"
     }
   ],
   "portfolio": [
@@ -124,6 +149,7 @@
     }
   ],
   "interests": [
+    "Artificial Intelligence",
     "Marchine Learning",
     "Leadership",
     "Traveling",
