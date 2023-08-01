@@ -5,7 +5,7 @@
     "role": "Senior Software Engineer",
     "contact": {
       "phone": "(+1) 123-456789",
-      "email": "codesandtags@gmail.com"
+      "email": "etorres.net@gmail.com"
     },
     "socialMedia": {
       "linkedin": "https://ca.linkedin.com/in/edwintorresdeveloper/en",
@@ -44,6 +44,26 @@
         "Created and maintained group of reusable libraries for Frontend projects.",
         "Lead a frontend community made of ~20 people."
       ]
+    },
+    {
+      "jobTitle": "Senior Developer",
+      "company": "Endava, Colombia",
+      "dates": "Mar 2017 - Jun 2017",
+      "accomplishments": [
+        "Developed scalable React + Redux applications for global Endava clients, using pm2, yarn, ES6, SASS, Webpack 2.x, Semantic UI, Node.js, Express.js, Redux-Saga, and Firebase.",
+        "Performed code reviews and documented Confluence projects."
+      ]
+    },
+    {
+      "jobTitle": "Senior Software Engineer",
+      "company": "Scotiabank, Colombia",
+      "dates": "Aug 2015 - Mar 2017",
+      "accomplishments": [
+        "Worked on Project Helios, a global alliance between Renault and Nissan to develop a new global digital customer engagement platform.",
+        "Utilized JAVA, J2EE, Servlets, AEM (Adobe Experience Manager), JavaScript, BackboneJS, MarionetteJS, Spring Framework, ApiGee, MongoDB, and Elastic Search.",
+        "Supported QA Teams in setting up environments and providing mock data.",
+        "Conducted demos to clients and prepared QA environments."
+      ]
     }
   ],
   "education": [
@@ -64,77 +84,127 @@
     {
       "name": "JavaScript",
       "level": 5,
-      "type": "hard"
+      "type": "Coding Language"
     },
     {
       "name": "TypeScript",
       "level": 5,
-      "type": "hard"
+      "type": "Coding Language"
     },
     {
       "name": "Python",
       "level": 4,
-      "type": "hard"
+      "type": "Coding Language"
     },
     {
-      "name": "HTML/CSS/SASS",
+      "name": "Angular",
       "level": 5,
-      "type": "hard"
+      "type": "Technical"
     },
     {
       "name": "React",
       "level": 4,
-      "type": "hard"
+      "type": "Technical"
     },
     {
-      "name": "Node.js",
+      "name": "CSS",
       "level": 4,
-      "type": "hard"
-    },
-    {
-      "name": "NextJS",
-      "level": 4,
-      "type": "hard"
+      "type": "Technical"
     },
     {
       "name": "Docker",
       "level": 4,
-      "type": "hard"
+      "type": "Technical"
+    },
+    {
+      "name": "Continous Integration",
+      "level": 4,
+      "type": "Technical"
+    },
+    {
+      "name": "Express.js",
+      "level": 4,
+      "type": "Technical"
+    },
+    {
+      "name": "Git",
+      "level": 5,
+      "type": "Technical"
+    },
+    {
+      "name": "Google Cloud",
+      "level": 3,
+      "type": "Technical"
+    },
+    {
+      "name": "HTML",
+      "level": 5,
+      "type": "Technical"
     },
     {
       "name": "Kubernetes",
       "level": 4,
-      "type": "hard"
+      "type": "Technical"
+    },
+    {
+      "name": "Machine Learning",
+      "level": 4,
+      "type": "Technical"
+    },
+    {
+      "name": "Node.js",
+      "level": 4,
+      "type": "Technical"
+    },
+    {
+      "name": "Web Scraping",
+      "level": 4,
+      "type": "Technical"
+    },
+    {
+      "name": "SQL",
+      "level": 4,
+      "type": "Technical"
     },
     {
       "name": "Communication",
-      "level": 5,
-      "type": "soft"
+      "level": 4,
+      "type": "General"
     },
     {
-      "name": "Problem-solving",
+      "name": "Community Building",
       "level": 5,
-      "type": "soft"
-    },
-    {
-      "name": "Teamwork",
-      "level": 5,
-      "type": "soft"
+      "type": "General"
     },
     {
       "name": "Creativity",
       "level": 4,
-      "type": "soft"
+      "type": "General"
     },
     {
       "name": "Leadership",
       "level": 4,
-      "type": "soft"
+      "type": "General"
     },
     {
-      "name": "Community Driven",
+      "name": "Public Speaking",
       "level": 4,
-      "type": "soft"
+      "type": "General"
+    },
+    {
+      "name": "Team Work",
+      "level": 4,
+      "type": "General"
+    },
+    {
+      "name": "Blog Writing",
+      "level": 4,
+      "type": "General"
+    },
+    {
+      "name": "Photography",
+      "level": 4,
+      "type": "General"
     }
   ],
   "portfolio": [
