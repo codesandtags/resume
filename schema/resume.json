@@ -20,7 +20,8 @@
       "company": "Scotiabank, Canada",
       "dates": "Feb 2021 - Present",
       "accomplishments": [
-        "Implemented Backstage to increased the <strong>Developer Experience (DX)</strong> for more than <strong>200 developers</strong> in different regions.",
+        "Created a system to measure the Software Reusing at Scotiabank, using several sources of informations.",
+        "Implemented Backstage to increase the <strong>Developer Experience (DX)</strong> for over 200 developers across various regions.",
         "Worked with teams in different regions across America, to promote the software reuse.",
         "Advocated the InnerSource adoption at Scotiabank, and, created documentation, provided talks and guidance."
       ]
@@ -42,7 +43,7 @@
       "accomplishments": [
         "Implemented successfully the Microfrontend architecture for 7 application in one of the most important customer flows.",
         "Created and maintained group of reusable libraries for Frontend projects.",
-        "Lead a frontend community made of ~20 people."
+        "Led a frontend community made of ~20 people."
       ]
     },
     {
