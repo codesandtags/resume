@@ -125,11 +125,29 @@ function populateSkills(skills) {
   const skillsElement = document.querySelector("#skills");
   skillsElement.innerHTML = "<h2>Skills</h2>";
 
-  const skillGroup = document.createElement("div");
-  skillGroup.classList.add("skill-group");
-  const hardSkills = skills.filter((skill) => skill.type === "hard");
-  const softSkills = skills.filter((skill) => skill.type === "soft");
+  // Get skill types from the skills array
+  skillTypes = new Set(skills.map((skill) => skill.type));
 
+  for (const skillType of skillTypes) {
+    const skillGroup = document.createElement("div");
+    skillGroup.classList.add("skill-group");
+    
+    const skillTypeElement = document.createElement("div");
+    skillTypeElement.classList.add("skill-type");
+    skillTypeElement.innerHTML = `
+      <h3>${skillType}</h3>
+    `;
+    skillGroup.appendChild(skillTypeElement);
+    const skillTypeList = document.createElement("div");
+    skillTypeList.classList.add("skill-type-list");
+    skillTypeList.innerHTML = `
+      ${renderSkills(skills.filter((skill) => skill.type === skillType))}
+    `;
+    skillGroup.appendChild(skillTypeList);
+    skillsElement.appendChild(skillGroup);
+  }
+
+  /*
   const hardSkillsList = document.createElement("div");
   hardSkillsList.innerHTML = `
     <div clas="hard-skills">
@@ -147,7 +165,8 @@ function populateSkills(skills) {
     </div>
   `;
   skillGroup.appendChild(softSkillsList);
-  skillsElement.appendChild(skillGroup);
+  */
+
   addIntersectionToAnimateSkills(skillsElement);
 }
 
