@@ -13,14 +13,14 @@
       "website": "https://www.codesandtags.io/"
     }
   },
-  "summary": "Highly driven software developer with a decade of experience across diverse industries including Real Estate, Payments, Health, and Finance. Specialized in Web Development, Micro Frontends, InnerSource, and Architecture Design. <strong>Passionate about enhancing developer experience</strong> through improved documentation and task automation.",
+  "summary": "Highly driven software developer with a decade of experience across diverse industries including Real Estate, Payments, Health, and Finance. Specialized in Web Development, Micro Frontends, InnerSource, and Architecture Design. <strong>Passionate about enhancing developer experience</strong> through improved documentation, task automation, and a community builder.",
   "workExperience": [
     {
       "jobTitle": "Senior Software Engineer",
       "company": "Scotiabank, Canada",
       "dates": "Feb 2021 - Present",
       "accomplishments": [
-        "Created a system to measure the Software Reusing at Scotiabank, using several sources of informations.",
+        "Created a system to measure the Software Reusing at Scotiabank, using several sources of information.",
         "Implemented Backstage to increase the <strong>Developer Experience (DX)</strong> for over 200 developers across various regions.",
         "Worked with teams in different regions across America, to promote the software reuse.",
         "Advocated the InnerSource adoption at Scotiabank, and, created documentation, provided talks and guidance."
@@ -69,7 +69,13 @@
   ],
   "education": [
     {
-      "dates": "2023 - Present",
+      "dates": "Jul 2023 - Present",
+      "institution": "Google Cloud Innovators",
+      "certificate": "Cloud Engineering Journey, Online",
+      "accomplishments": []
+    },
+    {
+      "dates": "May 2023 - Present",
       "institution": "ZTM Academy",
       "certificate": "Machine Learning and Data Science, Online",
       "accomplishments": []
