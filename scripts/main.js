@@ -42,6 +42,7 @@ function populateWorkExperience(workExperience) {
       <ul>
         ${job.accomplishments.map((acc) => `<li>${acc}</li>`).join("")}
       </ul>
+      <div><strong>Skills</strong>: ${job.skills.join(", ")}</div>
     `;
     workExperienceElement.appendChild(jobElement);
   });
@@ -70,33 +71,6 @@ function populateEducation(education) {
   });
 }
 
-// Get skill strength with squares given a skill level
-function getSkillStrength(level) {
-  const skillStrength = [];
-  for (let i = 0; i < 5; i++) {
-    if (i < level) {
-      skillStrength.push("<span>■</span>");
-    } else {
-      skillStrength.push("<span>□</span>");
-    }
-  }
-  return skillStrength.join("");
-}
-
-function renderSkills(skills) {
-  return `
-  <ul>
-  ${skills
-    .map(
-      (skill) => `<li>
-    <span>${skill.name}</span>
-    <div class="skill-level">${getSkillStrength(skill.level)}</div>
-  </li>`
-    )
-    .join("")}
-</ul>`;
-}
-
 function addIntersectionToAnimateSkills(skillsSection) {
   // Create an Intersection Observer
   const observer = new IntersectionObserver((entries) => {
@@ -119,55 +93,6 @@ function addIntersectionToAnimateSkills(skillsSection) {
 
   // Start observing the skills section
   observer.observe(skillsSection);
-}
-
-function populateSkills(skills) {
-  const skillsElement = document.querySelector("#skills");
-  skillsElement.innerHTML = "<h2>Skills</h2>";
-
-  // Get skill types from the skills array
-  skillTypes = new Set(skills.map((skill) => skill.type));
-
-  for (const skillType of skillTypes) {
-    const skillGroup = document.createElement("div");
-    skillGroup.classList.add("skill-group");
-    
-    const skillTypeElement = document.createElement("div");
-    skillTypeElement.classList.add("skill-type");
-    skillTypeElement.innerHTML = `
-      <h3>${skillType}</h3>
-    `;
-    skillGroup.appendChild(skillTypeElement);
-    const skillTypeList = document.createElement("div");
-    skillTypeList.classList.add("skill-type-list");
-    skillTypeList.innerHTML = `
-      ${renderSkills(skills.filter((skill) => skill.type === skillType))}
-    `;
-    skillGroup.appendChild(skillTypeList);
-    skillsElement.appendChild(skillGroup);
-  }
-
-  /*
-  const hardSkillsList = document.createElement("div");
-  hardSkillsList.innerHTML = `
-    <div clas="hard-skills">
-      <h3>Hard Skills</h3>
-      ${renderSkills(hardSkills)}
-    </div>
-  `;
-  skillGroup.appendChild(hardSkillsList);
-
-  const softSkillsList = document.createElement("div");
-  softSkillsList.innerHTML = `
-    <div clas="soft-skills">
-      <h3>Soft Skills</h3>
-      ${renderSkills(softSkills)}
-    </div>
-  `;
-  skillGroup.appendChild(softSkillsList);
-  */
-
-  addIntersectionToAnimateSkills(skillsElement);
 }
 
 function populatePortfolio(portfolio) {
@@ -206,7 +131,6 @@ fetch("schema/resume.json")
     populateHeader(data.header);
     populateSummary(data.summary);
     populateWorkExperience(data.workExperience);
-    populateSkills(data.skills);
     populateEducation(data.education);
     populateInterests(data.interests);
   })
