@@ -117,6 +117,10 @@ ul {
   color: var(--secondary-color);
 }
 
+.experience__skills {
+  margin-top: 1rem;
+}
+
 /**
  Education
  **/
@@ -139,62 +143,6 @@ ul {
 /**
  Skills
  **/
-.skill-group {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.skill-group > div {
-  width: 100%;
-  margin: 1rem 0;
-}
-
-.skill-group > div ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-group > div ul li {
-  display: flex;
-  justify-content: space-between;
-}
-
-.skill-level span {
-  opacity: 0;
-  color: var(--primary-color);
-}
-
-.skill-level span.animate {
-  animation: fadeIn 1s linear forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-.skill-level span:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.skill-level span:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.skill-level span:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-.skill-level span:nth-child(4) {
-  animation-delay: 0.6s;
-}
-
-.skill-level span:nth-child(5) {
-  animation-delay: 0.8s;
-}
 
 /**
  Interests
@@ -218,6 +166,7 @@ ul {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   cursor: pointer;
+  font-size: 1.1rem;
 }
 
 #interests ul li:hover {
@@ -248,15 +197,11 @@ ul {
   }
 
   .skill-group {
-    flex-direction: row;
+    flex-direction: column;
     align-items: baseline;
   }
 
   .skill-group > div:nth-child(2) {
     margin-left: 2rem;
-  }
-
-  .skill-group > div {
-    width: 50%;
   }
 }
