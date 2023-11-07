@@ -20,10 +20,10 @@
       "company": "Scotiabank, Canada",
       "dates": "Feb 2021 - Present",
       "accomplishments": [
-        "Created a system to measure the Software Reusing at Scotiabank, using several sources of information.",
-        "Implemented Backstage to increase the <strong>Developer Experience (DX)</strong> for over 200 developers across various regions.",
-        "Worked with teams in different regions across America, to promote the software reuse.",
-        "Advocated the InnerSource adoption at Scotiabank, and, created documentation, provided talks and guidance."
+        "Participated in Backstage implementation to increase the <strong>Developer Experience (DX)</strong> for over 200 developers across various regions.",
+        "Created a system to measure Software Reuse at Scotiabank, and provided insights to teams reusing in more than 3000 repos.",
+        "Lead an community made of teams from regions across America, to promote software reusability and new initiatives.",
+        "Advocated of InnerSource at Scotiabank, by creating documentation, templates, provided talks and guidance to teams."
       ]
     },
     {
@@ -31,9 +31,9 @@
       "company": "Scotiabank, Colombia",
       "dates": "Nov 2019 - Feb 2021",
       "accomplishments": [
-        "Architect and write front end code for the foundation and complex features of each project.",
+        "Architect and write Front-End code for the foundation and complex features of important projects in Colombia.",
         "Work closely with our design and UX teams to deliver next generation experiences across our applications.",
-        "Created technical documentation for front end aspects of the project."
+        "Created technical documentation for Front-end guidelines in Colombia."
       ]
     },
     {
@@ -41,9 +41,9 @@
       "company": "Scotiabank, Colombia",
       "dates": "Jun 2017 - Nov 2019",
       "accomplishments": [
-        "Implemented successfully the Microfrontend architecture for 7 application in one of the most important customer flows.",
-        "Created and maintained group of reusable libraries for Frontend projects.",
-        "Led a Frontend community made of ~20 people."
+        "Implemented successfully a Microfrontend architecture for 7 application in one of the most important customer flows.",
+        "Created and maintained group of reusable libraries for Front-end projects in Colombia.",
+        "Led a Front-End community made of ~20 people and keep up the collaborative culture."
       ]
     },
     {
@@ -75,9 +75,9 @@
       "accomplishments": []
     },
     {
-      "dates": "May 2023 - Present",
+      "dates": "2023 - Present",
       "institution": "ZTM Academy",
-      "certificate": "Machine Learning and Data Science, Online",
+      "certificate": "Machine Learning, Web Development, Online",
       "accomplishments": []
     },
     {
