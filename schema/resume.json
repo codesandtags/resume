@@ -38,11 +38,12 @@
         "Web Scraping",
         "Software Architecture",
         "Developer Experience",
-        "Design System",
+        "Design Systems",
         "Leadership",
         "InnerSource",
         "Kubernetes",
-        "Community Building"
+        "Community Building",
+        "Backstage"
       ]
     },
     {
@@ -56,7 +57,7 @@
       ],
       "skills": [
         "Angular",
-        "Design System",
+        "Design Systems",
         "Docker",
         "TypeScript",
         "Java",
@@ -162,7 +163,7 @@
   ],
   "interests": [
     "Public Speaking",
-    "Marchine Learning",
+    "Artificial Intelligence",
     "Leadership",
     "Traveling",
     "Photography",
@@ -170,6 +171,7 @@
     "Running",
     "InnerSource",
     "Community Building",
-    "Design Systems"
+    "Design Systems",
+    "Developer Experience"
   ]
 }

@@ -42,7 +42,10 @@ function populateWorkExperience(workExperience) {
       <ul>
         ${job.accomplishments.map((acc) => `<li>${acc}</li>`).join("")}
       </ul>
-      <div><strong>Skills</strong>: ${job.skills.join(", ")}</div>
+      <div class="experience__skills">
+        <div><strong>Skills</strong></div>
+        <div class="experience__skills-list">${job.skills.join(", ")}</div>
+      </div>
     `;
     workExperienceElement.appendChild(jobElement);
   });
