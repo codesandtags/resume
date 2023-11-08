@@ -13,7 +13,7 @@
       "website": "https://www.codesandtags.io/"
     }
   },
-  "summary": "Highly driven <strong>Senior Software Engineer</strong> with a decade of experience across diverse industries including Real Estate, Payments, Health, and Finance. Specialized in Web Development. Passionate about enhancing <strong>Developer Experience, Design Systems</strong>, and focused on create a high impact to organizations and communities.",
+  "summary": "Highly driven Senior Software Engineer with a decade of experience across diverse industries including Real Estate, Payments, Health, and Finance. Specialized in Web Development, Software Architecture and Design Systems. Passionate about enhancing Developer Experience, and focused on create a high impact to organizations and lead communities.",
   "workExperience": [
     {
       "jobTitle": "Senior Software Engineer",
@@ -38,11 +38,12 @@
         "Web Scraping",
         "Software Architecture",
         "Developer Experience",
-        "Design System",
+        "Design Systems",
         "Leadership",
         "InnerSource",
         "Kubernetes",
-        "Community Building"
+        "Community Building",
+        "Backstage"
       ]
     },
     {
@@ -56,7 +57,7 @@
       ],
       "skills": [
         "Angular",
-        "Design System",
+        "Design Systems",
         "Docker",
         "TypeScript",
         "Java",
@@ -162,7 +163,7 @@
   ],
   "interests": [
     "Public Speaking",
-    "Marchine Learning",
+    "Artificial Intelligence",
     "Leadership",
     "Traveling",
     "Photography",
@@ -170,6 +171,7 @@
     "Running",
     "InnerSource",
     "Community Building",
-    "Design Systems"
+    "Design Systems",
+    "Developer Experience"
   ]
 }
