@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: resume
+  description: A component to store and display my resume
+spec:
+  type: website
+  lifecycle: production
+  owner: user:edwin.torres
