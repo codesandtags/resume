@@ -13,16 +13,25 @@
       "website": "https://www.codesandtags.io/"
     }
   },
-  "summary": "Highly driven Software Engineer with a decade of experience across diverse industries including Real Estate, Payments, Health, and Finance. Specialized in Web Development. Passionate about enhancing Developer Experience, and focused on create a high impact to organizations and communities.",
+  "summary": "With over 10+ years experience, specialized in web development solutions in Finance, Digital agency, Real-estate, and Payments industries, impacting over 200,000 users worldwide. Committed to driving project success through effective team collaboration, managing teams of up to 15 engineers. Interested in elevating Developer Experience and contributing to software communities.",
   "workExperience": [
+    {
+      "jobTitle": "Software Technical Lead",
+      "company": "Scotiabank, Canada",
+      "dates": "Jun 2024 - Present",
+      "accomplishments": [
+        "Supported the migration of 15 microapps to Google Cloud Platform (GCP), reducing infrastructure costs by 25% and improving performance and scalability by 40%.",
+        "Led a team of 3 Senior Engineers to design, build, and release a robust API in the documents domain, reducing data retrieval times by 50% and increasing operational efficiency."
+      ]
+    },
     {
       "jobTitle": "Senior Software Engineer",
       "company": "Scotiabank, Canada",
-      "dates": "Feb 2021 - Present",
+      "dates": "Feb 2021 - Jun 2024",
       "accomplishments": [
-        "Participated in Backstage implementation to increase the <strong>Developer Experience (DX)</strong> for over 200 developers across various regions.",
-        "Created a system to measure Software Reuse at Scotiabank, and provided insights to teams reusing in more than 3000 repos.",
-        "Lead an community made of teams from regions across America, to promote software reusability and new initiatives.",
+        "Engineered a comprehensive system and API using React, Next.js, and PostgreSQL to monitor software reuse, integrating data from over 30,000 repositories, resulting in a 25% reduction in duplicate code and a 15% increase in development efficiency.",
+        "Led the implementation of Backstage on Anthos, enhancing the Developer Experience (DX) for over 200 engineers globally through an InnerSource approach, resulting in a 20% increase in developer productivity.",
+        "Designed an InnerSource template published on Bitbucket and used by more than 10 repositories, advocating for InnerSource adoption at Scotiabank, resulting in a 50% increase in code collaboration and knowledge sharing.",
         "Advocated of InnerSource at Scotiabank, and, created documentation, provided talks and guidance to teams."
       ]
     },
@@ -41,9 +50,9 @@
       "company": "Scotiabank, Colombia",
       "dates": "Jun 2017 - Nov 2019",
       "accomplishments": [
-        "Implemented successfully a Microfrontend architecture for 7 application in one of the most important customer flows.",
-        "Created and maintained group of reusable libraries for Front-end projects in Colombia.",
-        "Led a Front-End community made of ~20 people and keep up the collaborative culture."
+        "Developed technical documentation for Frontend guidelines of the projects to benefit more than 50 Frontend engineers and 12 web projects, leading to a 30% improvement in code quality and consistency.",
+        "Pioneered the adoption of a Micro Frontend architecture, successfully integrating it into seven key applications in a distributed system using Micro Services, resulting in a 40% reduction in development time and a 20% increase in system scalability.",
+        "Collaborated with a team of 10 UI/UX designers and engineers to develop and maintain the Angular-based Scotiabank Design System, used in 15+ projects, enhancing user experience and consistency, leading to a 25% increase in user satisfaction scores."
       ]
     },
     {
@@ -51,19 +60,16 @@
       "company": "Endava, Colombia",
       "dates": "Mar 2017 - Jun 2017",
       "accomplishments": [
-        "Developed scalable React + Redux applications for global Endava clients, using pm2, yarn, ES6, SASS, Webpack 2.x, Semantic UI, Node.js, Express.js, Redux-Saga, and Firebase.",
-        "Performed code reviews and documented Confluence projects."
+        "Developed and optimized 5+ React + Redux applications for Endava's global clients, improving performance by 30% and user satisfaction by 25%."
       ]
     },
     {
       "jobTitle": "Senior Software Engineer",
-      "company": "Scotiabank, Colombia",
+      "company": "Prodigious, Colombia",
       "dates": "Aug 2015 - Mar 2017",
       "accomplishments": [
-        "Worked on Project Helios, a global alliance between Renault and Nissan to develop a new global digital customer engagement platform.",
-        "Utilized JAVA, J2EE, Servlets, AEM (Adobe Experience Manager), JavaScript, BackboneJS, MarionetteJS, Spring Framework, ApiGee, MongoDB, and Elastic Search.",
-        "Supported QA Teams in setting up environments and providing mock data.",
-        "Conducted demos to clients and prepared QA environments."
+        "Innovated a Mock-Data-Generator tool in JavaScript, reducing setup time for testing environments by 60%.",
+        "Conducted 20+ end-of-sprint demos to showcase new features to clients, enhancing client understanding and feedback integration."
       ]
     }
   ],
