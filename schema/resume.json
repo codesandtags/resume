@@ -20,6 +20,8 @@
       "company": "Scotiabank, Canada",
       "dates": "Jun 2024 - Present",
       "accomplishments": [
+        "Led the successful implementation of a Risk-Based Authentication project, collaborating with 5 cross-functional teams to design and execute the technical solution, enhancing system security and reducing fraud risks across multiple platforms.",
+        "Enhanced Scotiabank Canada's personal retail application by developing key features within a monorepo architecture using Next.js, React, TypeScript, Nx, Playwright, and OAuth2, resulting in improved performance, scalability, and user authentication security.",
         "Supported the migration of 15 microapps to Google Cloud Platform (GCP), reducing infrastructure costs by 25% and improving performance and scalability by 40%.",
         "Led a team of 3 Senior Engineers to design, build, and release a robust API in the documents domain, reducing data retrieval times by 50% and increasing operational efficiency."
       ]
@@ -31,18 +33,19 @@
       "accomplishments": [
         "Engineered a comprehensive system and API using React, Next.js, and PostgreSQL to monitor software reuse, integrating data from over 30,000 repositories, resulting in a 25% reduction in duplicate code and a 15% increase in development efficiency.",
         "Led the implementation of Backstage on Anthos, enhancing the Developer Experience (DX) for over 200 engineers globally through an InnerSource approach, resulting in a 20% increase in developer productivity.",
-        "Designed an InnerSource template published on Bitbucket and used by more than 10 repositories, advocating for InnerSource adoption at Scotiabank, resulting in a 50% increase in code collaboration and knowledge sharing.",
+        "Designed an InnerSource template published on Bitbucket and used by more than 10 repositories, advocating for InnerSource adoption at Scotiabank, resulting in a 50% increase in code collaboration and knowledge sharing",
         "Advocated of InnerSource at Scotiabank, and, created documentation, provided talks and guidance to teams."
       ]
     },
     {
-      "jobTitle": "Software Architect",
+      "jobTitle": "Software Architect and Frontend Lead",
       "company": "Scotiabank, Colombia",
       "dates": "Nov 2019 - Feb 2021",
       "accomplishments": [
-        "Architect and write Front-End code for the foundation and complex features of important projects in Colombia.",
-        "Work closely with our design and UX teams to deliver next generation experiences across our applications.",
-        "Created technical documentation for Front-end guidelines in Colombia."
+        "Developed technical documentation for Frontend guidelines of the projects to benefit more than 50 Frontend engineers and 12 web projects, leading to a 30% improvement in code quality and consistency.",
+        "Pioneered the adoption of a Micro Frontend architecture, successfully integrating it into seven key applications in a distributed system using Micro Services, resulting in a 40% reduction in development time and a 20% increase in system scalability.",
+        "Collaborated with a team of 10 UI/UX designers and engineers to develop and maintain the Angular-based Scotiabank Design System, used in 15+ projects, enhancing user experience and consistency, leading to a 25% increase in user satisfaction scores.",
+        "Led the recruitment process for over 110 candidates for Senior Software roles at Scotiabank Colpatria, ensuring the selection of top talent through structured interviews, resulting in the successful hiring of high-performing engineers who contributed to key projects."
       ]
     },
     {
